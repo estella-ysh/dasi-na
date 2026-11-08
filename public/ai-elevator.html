@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI 영상 제작 - 수상한 엘리베이터 | 다시, 나</title>
+
+  <!-- [공통] index.html과 동일한 본문 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Nanum+Myeongjo:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- [공통] 기존 포트폴리오 스타일 -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- [추가] 엘리베이터 상세 페이지 전용 스타일 -->
+  <link rel="stylesheet" href="css/ai-elevator.css">
+</head>
+
+<body class="ai-elevator-page">
+ 
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">
+      <span class="logo-title">다시, 나</span>
+      <span class="logo-subtitle">DEVELOPER PORTFOLIO</span>
+    </a>
+
+    <a href="index.html#ai-content" class="detail-back">
+      ← MAIN
+    </a>
+  </div>
+</header>
+
+  <main class="elevator-main">
+
+    <!-- =========================================
+         [추가] 프로젝트 제목
+    ========================================= -->
+    <section class="elevator-intro">
+
+      <p class="elevator-eyebrow">
+        AI CONTENT / PROJECT 02
+      </p>
+
+      <h1>AI 영상 제작 - 수상한 엘리베이터</h1>
+
+      <p class="elevator-summary">
+        생성형 AI로 완성한 3D 애니메이션,
+        어린이를 위한 모험 이야기
+      </p>
+
+    </section>
+
+
+    <!-- =========================================
+         [추가] 제작 과정
+         PC: 3열 / 모바일: 1열
+    ========================================= -->
+    <section class="elevator-content"
+             aria-label="프로젝트 제작 과정">
+
+      <!-- 01 기획의도 -->
+      <article class="elevator-item">
+        <div class="elevator-item-heading">
+          <span class="elevator-number">01</span>
+          <h2>기획의도</h2>
+        </div>
+
+        <p>
+          생성형 AI를 활용해 상상력 넘치는
+          3D 애니메이션을 제작하고,
+          어린이들에게 모험과 용기의 메시지를
+          전달하고자 했습니다.
+        </p>
+      </article>
+
+      <!-- 02 문제점 -->
+      <article class="elevator-item">
+        <div class="elevator-item-heading">
+          <span class="elevator-number">02</span>
+          <h2>문제점</h2>
+        </div>
+
+        <p>
+          영상 제작 과정에서 캐릭터의 입 모양과
+          음성, 효과음이 일치하지 않고
+          배경과 의상이 달라지는 문제가
+          발생했습니다.
+        </p>
+      </article>
+
+      <!-- 03 해결내용 -->
+      <article class="elevator-item">
+        <div class="elevator-item-heading">
+          <span class="elevator-number">03</span>
+          <h2>해결내용</h2>
+        </div>
+
+        <p>
+          프롬프트에 대사와 동작의 시간을
+          명확히 지정하고, 캐릭터와 배경의
+          일관성을 유지하도록 반복 수정했습니다.
+        </p>
+      </article>
+
+    </section>
+
+
+    <!-- =========================================
+         [추가] 캐릭터 및 장면 이미지
+    ========================================= -->
+    <section class="elevator-gallery"
+             aria-label="캐릭터 및 장면 소개">
+
+      <!-- 대표 이미지 -->
+      <img
+        class="elevator-main-image"
+        src="img/elevator-main.png"
+        alt="민우와 몽이, 고래가 등장하는 수상한 엘리베이터 애니메이션"
+      >
+
+      <!-- 캐릭터 이미지 3개 -->
+      <div class="elevator-gallery-grid">
+
+        <img
+          src="img/elevator-boy.jpg"
+          alt="민우 캐릭터 설정"
+          loading="lazy"
+        >
+
+        <img
+          src="img/elevator-dog.jpg"
+          alt="몽이 캐릭터 설정"
+          loading="lazy"
+        >
+
+        <img
+          src="img/elevator-whale.jpg"
+          alt="고래 캐릭터 설정"
+          loading="lazy"
+        >
+
+      </div>
+
+      <p class="elevator-gallery-caption">
+        AI 영상 제작 · '수상한 엘리베이터'
+        주요 캐릭터 및 장면
+      </p>
+
+
+      <!-- =====================================
+           [추가] 유튜브 동영상 재생 영역
+           제공한 영상 URL을 embed 형식으로 변환
+      ===================================== -->
+      <div class="elevator-video">
+
+        <iframe
+          src="https://www.youtube.com/embed/CffNNadEzlg"
+          title="수상한 엘리베이터 - AI 3D 애니메이션"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         [공통] AI CONTENT 목록으로 돌아가기
+    ========================================= -->
+    <div class="elevator-bottom-nav">
+      <a href="index.html#ai-content"
+         class="elevator-return-button">
+        ← AI CONTENT 목록으로
+      </a>
+    </div>
+
+  </main>
+
+
+  <!-- =========================================
+       [공통] 푸터
+  ========================================= -->
+  <footer class="elevator-footer">
+    <p>© 다시, 나 · DEVELOPER PORTFOLIO</p>
+  </footer>
+
+</body>
+</html>

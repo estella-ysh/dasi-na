@@ -1,0 +1,468 @@
+
+/* ==========================================
+   AI CONTENT / PROJECT 02
+   수상한 엘리베이터 상세 페이지
+========================================== */
+
+/* [공통] 기본 설정 */
+.ai-elevator-page {
+  margin: 0;
+  background: #fffaf9;
+  color: #383238;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+
+.ai-elevator-page *,
+.ai-elevator-page *::before,
+.ai-elevator-page *::after {
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   [01] 상단 헤더
+   [수정] ai-samgukji.html과 동일한 위치로 정렬
+========================================== */
+
+/* [수정] 헤더 전체 */
+.ai-elevator-page .elevator-header {
+  width: 100%;
+  padding: 0 30px;
+  background: #f5e8e6;
+}
+
+/* [핵심 수정] 헤더 내부 너비 및 좌우 정렬 */
+.ai-elevator-page .elevator-header-inner {
+  width: 100%;
+  max-width: 960px;
+  min-height: 80px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* [수정] 왼쪽 로고 */
+.ai-elevator-page .elevator-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+
+  margin: 0;
+  color: #642b42;
+  text-decoration: none;
+}
+
+/* [유지] 다시, 나 */
+.ai-elevator-page .elevator-logo-title {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* [유지] DEVELOPER PORTFOLIO */
+.ai-elevator-page .elevator-logo-subtitle {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+/* [수정] 오른쪽 PORTFOLIO 링크 */
+.ai-elevator-page .elevator-header-back {
+  margin-left: auto;
+
+  color: #642b42;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
+/* ==========================================
+   [02] 본문 최대 너비
+========================================== */
+
+.ai-elevator-page .elevator-main {
+  width: min(750px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 30px 0 70px;
+}
+
+
+/* ==========================================
+   [03] 프로젝트 제목
+========================================== */
+
+.ai-elevator-page .elevator-intro {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.ai-elevator-page .elevator-eyebrow {
+  margin: 0 0 14px;
+
+  color: #d4577c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.ai-elevator-page .elevator-intro h1 {
+  margin: 0 0 14px;
+
+  color: #642b42;
+  font-size: clamp(25px, 4vw, 36px);
+  font-weight: 700;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.ai-elevator-page .elevator-summary {
+  margin: 0;
+
+  color: #746b70;
+  font-size: 14px;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
+/* ==========================================
+   [04] 제작 과정
+   [수정] ai-samgukji.html과 동일한 3열 레이아웃
+========================================== */
+
+/* [수정] 제작 과정 전체 영역 */
+.ai-elevator-page .elevator-content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+
+  width: 100%;
+  margin: 0 0 28px;
+  padding: 28px 0;
+
+  border-top: 1px solid #e8dede;
+  border-bottom: 1px solid #e8dede;
+}
+
+/* [수정] 각 항목의 좌우 여백 */
+.ai-elevator-page .elevator-item {
+  min-width: 0;
+  padding: 0 20px;
+}
+
+/* [수정] 첫 번째 항목 왼쪽 여백 제거 */
+.ai-elevator-page .elevator-item:first-child {
+  padding-left: 0;
+}
+
+/* [수정] 마지막 항목 오른쪽 여백 제거 */
+.ai-elevator-page .elevator-item:last-child {
+  padding-right: 0;
+}
+
+/* [수정] 항목 사이 핑크색 세로 구분선 */
+.ai-elevator-page .elevator-item + .elevator-item {
+  border-left: 1px solid #e8a0b5;
+}
+
+/* [수정] 번호와 제목을 한 줄로 정렬 */
+.ai-elevator-page .elevator-item-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin: 0 0 14px;
+  padding: 0;
+
+  border: 0;
+}
+
+/* [수정] 01, 02, 03 번호 */
+.ai-elevator-page .elevator-number {
+  color: #d4577c;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* [수정] 기획의도 / 문제점 / 해결내용 제목 */
+.ai-elevator-page .elevator-item h2 {
+  margin: 0;
+  padding: 0;
+
+  color: #642b42;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  /* [추가] 제목 아래 장식선 제거 */
+  border: 0;
+}
+
+/* [추가] 기존 CSS에 장식선이 있다면 제거 */
+.ai-elevator-page .elevator-item h2::before,
+.ai-elevator-page .elevator-item h2::after,
+.ai-elevator-page .elevator-item-heading::before,
+.ai-elevator-page .elevator-item-heading::after {
+  content: none;
+  display: none;
+}
+
+/* [수정] 본문 설명 */
+.ai-elevator-page .elevator-item p {
+  margin: 0;
+  padding: 0;
+
+  color: #383238;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.85;
+  word-break: keep-all;
+}
+
+
+/* ==========================================
+   [05] 이미지 갤러리
+========================================== */
+
+.ai-elevator-page .elevator-gallery {
+  padding: 14px;
+  background: #fff;
+  border: 1px solid #eee1e5;
+  border-radius: 15px;
+}
+
+.ai-elevator-page .elevator-main-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ai-elevator-page .elevator-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ai-elevator-page .elevator-gallery-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 9px;
+}
+
+.ai-elevator-page .elevator-gallery-caption {
+  margin: 12px 0 20px;
+
+  color: #746b70;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* ==========================================
+   [06] 유튜브 동영상
+   [추가] 화면 안에서 바로 재생
+========================================== */
+
+.ai-elevator-page .elevator-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  background: #0e1e34;
+  border-radius: 12px;
+}
+
+.ai-elevator-page .elevator-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* ==========================================
+   [07] 하단 돌아가기 버튼
+========================================== */
+
+.ai-elevator-page .elevator-bottom-nav {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.ai-elevator-page .elevator-return-button {
+  display: inline-block;
+  padding: 13px 24px;
+
+  color: #642b42;
+  background: transparent;
+  border: 1px solid #b34c70;
+  border-radius: 30px;
+
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.ai-elevator-page .elevator-return-button:hover {
+  background: #642b42;
+  color: #fff;
+}
+
+
+/* ==========================================
+   [08] 푸터
+========================================== */
+
+.ai-elevator-page .elevator-footer {
+  padding: 22px 15px;
+  background: #f5e8e6;
+  text-align: center;
+}
+
+.ai-elevator-page .elevator-footer p {
+  margin: 0;
+  color: #642b42;
+  font-size: 11px;
+}
+
+/* ==========================================
+   [모바일] 제작 과정 세로 1열
+========================================== */
+
+@media (max-width: 600px) {
+
+  /* [수정] 3열 → 1열 */
+  .ai-elevator-page .elevator-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px 0;
+  }
+
+  /* [수정] 각 항목의 좌우 여백 제거 */
+  .ai-elevator-page .elevator-item,
+  .ai-elevator-page .elevator-item:first-child,
+  .ai-elevator-page .elevator-item:last-child {
+    padding: 0;
+  }
+
+  /* [수정] 세로 구분선 대신 가로 구분선 */
+  .ai-elevator-page .elevator-item + .elevator-item {
+    padding-top: 24px;
+    border-left: 0;
+    border-top: 1px solid #e8a0b5;
+  }
+}
+
+
+
+/* ==========================================
+   삼국지 페이지와 화면 너비 통일
+   기존 디자인 및 레이아웃 유지
+========================================== */
+
+/* 1. 메인 영역: 최대 860px */
+.ai-elevator-page .elevator-main {
+  width: calc(100% - 40px);
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* 2. 기획의도 / 문제점 / 해결내용: 최대 860px */
+.ai-elevator-page .elevator-content {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(860px, calc(100vw - 40px));
+  max-width: none;
+}
+
+/* 3. 이미지 및 동영상 영역: 최대 860px */
+.ai-elevator-page .elevator-gallery {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(860px, calc(100vw - 40px));
+  max-width: none;
+}
+
+/* 4. 태블릿: 삼국지 메인 영역과 동일 */
+@media (max-width: 768px) {
+  .ai-elevator-page .elevator-main {
+    max-width: 680px;
+  }
+}
+
+/* 5. 모바일 너비 */
+@media (max-width: 600px) {
+  .ai-elevator-page .elevator-main {
+    width: calc(100% - 32px);
+  }
+
+  .ai-elevator-page .elevator-content,
+  .ai-elevator-page .elevator-gallery {
+    width: calc(100vw - 24px);
+  }
+}
+
+
+
+/* ==========================================
+   elevator-intro를 detail-intro와 동일하게
+========================================== */
+
+/* 소개 영역 */
+.ai-elevator-page .elevator-intro {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+/* AI CONTENT / PROJECT 02 */
+.ai-elevator-page .elevator-eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+}
+
+/* 프로젝트 제목 */
+.ai-elevator-page .elevator-intro h1 {
+  margin: 0 0 10px;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* 프로젝트 소개 문구 */
+.ai-elevator-page .elevator-summary {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+/* 모바일 */
+@media (max-width: 600px) {
+  .ai-elevator-page .elevator-intro {
+    margin-bottom: 26px;
+  }
+
+  .ai-elevator-page .elevator-eyebrow {
+    font-size: 0.72rem;
+  }
+
+  .ai-elevator-page .elevator-summary {
+    font-size: 0.95rem;
+  }
+}

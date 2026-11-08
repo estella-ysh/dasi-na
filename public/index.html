@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <!-- 문자 인코딩: 한글이 깨지지 않도록 설정 -->
   <meta charset="UTF-8">
@@ -18,85 +19,284 @@
   <!-- 외부 JavaScript 파일 연결 (defer: 화면을 다 읽은 뒤 실행) -->
   <script src="js/script.js" defer></script>
 </head>
+
 <body>
 
-    <!-- 머리 영역: 사이트 이름, 휴대폰 메뉴 버튼, 메뉴 -->
-  <header>
-    <h1>다시, 나</h1>
-    <!-- 휴대폰 메뉴 버튼 (3일차 추가) -->
-    <button type="button" id="menu-btn" aria-label="메뉴 열기" aria-expanded="false">☰</button>
-    <nav id="main-nav">
-      <ul>
-        <li><a href="#about">소개</a></li>
-        <li><a href="#career">경력</a></li>
-        <li><a href="#skills">역량</a></li>
-        <li><a href="#education">교육·자격</a></li>
-        <li><a href="#contact">문의</a></li>
-      </ul>
-    </nav>
+  <!-- 머리 영역: 사이트 이름, 휴대폰 메뉴 버튼, 메뉴 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#about" class="site-logo">
+        <span class="logo-title">다시, 나</span>
+        <span class="logo-subtitle">DEVELOPER PORTFOLIO</span>
+      </a>
+
+      <button type="button" id="menu-btn" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#about">소개</a></li>
+          <li><a href="#career">경력</a></li>
+          <li><a href="#skills">역량</a></li>
+          <li><a href="#education">교육·자격</a></li>
+          <li><a href="#ai-content">AI 콘텐츠</a></li>
+          <li><a href="#contact">문의 ↗</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
 
   <main>
     <!-- 소개 영역: 프로필 사진과 한 줄 소개 -->
+
+    <!-- 소개 영역 -->
     <section id="about">
-      <img src="img/photo.png" alt="김길동 프로필 사진" width="400" height="400">
-      <h2>윤세희</h2>
-      <p>10년 자바 개발 전문가, 다시 시작합니다.</p>
+      <div class="about-inner">
+
+        <div class="profile-image">
+          <img src="img/photo.png" alt="윤세희 프로필 이미지" width="400" height="400">
+        </div>
+
+        <div class="about-text">
+          <p class="about-label">
+            JAVA DEVELOPER & AI CREATOR
+          </p>
+
+          <h2>윤세희</h2>
+
+          <h3>
+            10년 자바 개발 경험으로,<br>
+            AI와 함께 다시 시작합니다.
+          </h3>
+
+          <p class="about-description">
+            웹 서비스 개발과 운영 경험을 바탕으로<br>
+            생성형 AI를 활용한 콘텐츠 기획·제작까지
+            확장하고 있습니다.
+          </p>
+        </div>
+
+      </div>
     </section>
+
 
     <!-- 경력 영역: 회사, 기간, 담당 업무 -->
-    <section id="career">
-      <h2>경력</h2>
-      <article>
-        <h3>Cloud9(웹에이전시)</h3>
-        <p>2007.03 ~ 2008.07</p>
-        <p>웹 서비스 개발, 웹 프로젝트 진행</p>
-      </article>
-      <article>
-        <h3>현대HDS</h3>
-        <p>2008.08 ~ 2016.10</p>
-        <p>현대해상 차세대 프로젝트 수행, 현대해상 영업포털 운영</p>
-      </article>
+    <section id="career" class="portfolio-section">
+
+      <div class="section-heading">
+        <p class="section-label">EXPERIENCE</p>
+        <h2>경력</h2>
+      </div>
+
+      <div class="career-list">
+
+        <article class="career-card">
+          <h3>현대HDS</h3>
+          <p class="career-date">2008.08 ~ 2016.10</p>
+          <p class="career-description">
+            현대해상 차세대 프로젝트 수행,
+            현대해상 영업포털 운영
+          </p>
+        </article>
+
+        <article class="career-card">
+          <h3>Cloud9(웹에이전시)</h3>
+          <p class="career-date">2007.03 ~ 2008.07</p>
+          <p class="career-description">
+            웹 서비스 개발, 웹 프로젝트 진행
+          </p>
+        </article>
+
+      </div>
     </section>
 
-    <!-- 역량 영역: 나의 강점 -->
-    <section id="skills">
-      <h2>역량</h2>
-      <ul>
-        <li>JAVA 프로그래밍 개발, 운영</li>
-        <li>ORACLE</li>
-        <li>생성형 AI를 활용한 웹페이지 제작</li>
-      </ul>
+    <!-- 역량 영역 -->
+    <section id="skills" class="portfolio-section">
+
+      <div class="section-heading">
+        <p class="section-label">SKILL</p>
+        <h2>역량</h2>
+      </div>
+
+      <div class="skills-list">
+        <ul>
+          <li>JAVA 프로그래밍 개발, 운영</li>
+          <li>ORACLE</li>
+          <li>생성형 AI를 활용한 웹페이지 제작</li>
+        </ul>
+      </div>
+
     </section>
 
     <!-- 교육·자격 영역 -->
-    <section id="education">
-      <h2>교육·자격</h2>
-      <ul>
-        <li>디지털서비스융합 전문가 양성과정 수료 (2026)</li>
-        <li>정보처리기사</li>
-      </ul>
+    <section id="education" class="portfolio-section">
+
+      <div class="section-heading">
+        <p class="section-label">CERTIFICATION</p>
+        <h2>교육·자격</h2>
+      </div>
+
+      <div class="education-list">
+        <ul>
+          <li>정보처리기사</li>
+          <li>
+            디지털서비스융합 전문가 양성과정 수료 (2026)
+          </li>
+        </ul>
+      </div>
+
     </section>
 
-        <!-- 문의 영역: 입력 폼 (4일차에 서버와 연결 예정) -->
+
+    <!-- AI 생성 콘텐츠 -->
+    <section id="ai-content" class="ai-section">
+
+      <div class="ai-heading">
+        <p class="section-label">AI GENERATED CONTENTS</p>
+        <h2>AI 생성 콘텐츠 </h2>
+        <p class="ai-intro">
+          생성형 AI를 활용해 기획하고 제작한
+          이미지 및 영상 프로젝트입니다.
+        </p>
+      </div>
+
+      <div class="ai-works">
+
+        <!-- 작품 01 : AI 이미지 -->
+        <article class="ai-work">
+
+          <div class="ai-media">
+            <a href="ai-samgukji.html" aria-label="AI 학습 포스터 제작 - 삼국지 상세 보기">
+              <img src="img/samgukji-thumbnail.jpg" alt="AI 학습 포스터 제작 - 삼국지" loading="lazy">
+            </a>
+          </div>
+
+          <div class="ai-work-info">
+          <div class="ai-title">
+            <span class="ai-number">01</span>
+            <h3>AI 학습 포스터 제작 - 최소한의 삼국지</h3>
+          </div>
+
+          <p>
+            생성형 AI로 삼국지를 간략화해 포스터로 제작하고
+            그에 관련된 목업작업입니다.
+          </p>
+
+          <div class="ai-tags">
+            <span>#AI이미지</span>
+            <span>#학습콘셉트</span>
+            <span>#이미지생성</span>
+          </div>
+        </div>
+      </div>
+
+      </article>
+
+      <!-- 작품 02 : AI 동영상 -->
+      <article class="ai-work">
+
+        <div class="ai-media">
+          <a href="ai-elevator.html" aria-label="AI 영상 제작 - 수상한 엘리베이터 상세 보기">
+            <img src="img/movie_thumb.png" alt="AI 영상 제작 - 수상한 엘리베이터">
+          </a>
+        </div>
+        <div class="ai-work-info">
+          <div class="ai-title">
+            <span class="ai-number">02</span>
+            <h3>AI 영상 제작 - 수상한 엘리베이터</h3>
+          </div>
+
+          <p>
+            생성형 AI로 바닷속으로 움직이는 엘리베이터를 소재로
+            영상으로 제작한 작업입니다.
+          </p>
+
+          <div class="ai-tags">
+            <span>#AI영상</span>
+            <span>#애니메이션</span>
+            <span>#콘텐츠편집</span>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- 작품 03 : AI 이미지 -->
+      <article class="ai-work">
+
+        <div class="ai-media">
+          <a href="ai-dream-postoffice.html" aria-label="AI 동화책 제작 - 달빛아래 꿈 우체국 상세보기">
+            <img src="img/book__thumb.png" alt="달빛아래 꿈 우체국" loading="lazy">
+          </a>
+        </div>
+
+        <div class="ai-work-info">
+          <div class="ai-title">
+            <span class="ai-number">03</span>
+            <h3>AI 동화책 제작 - 달빛아래 꿈 우체국</h3>
+          </div>
+
+          <p>
+            생성형 AI로 생성한 따뜻한 감성동화책 입니다.
+          </p>
+
+          <div class="ai-tags">
+            <span>#배경이미지</span>
+            <span>#콘텐츠소스</span>
+            <span>#AI아트</span>
+          </div>
+        </div>
+
+      </article>
+
+      </div>
+    </section>
+
+
+    <!-- 문의 영역 -->
     <section id="contact">
-      <h2>문의</h2>
-      <p>함께 일할 기회를 기다립니다. 아래에 문의를 남겨 주세요.</p>
-      <form id="contact-form" novalidate>
-        <label for="name">이름</label>
-        <input type="text" id="name" name="name" placeholder="홍길동">
 
-        <label for="email">이메일</label>
-        <input type="email" id="email" name="email" placeholder="example@email.com">
+      <div class="contact-inner">
 
-        <label for="message">문의 내용</label>
-        <textarea id="message" name="message" rows="5" placeholder="10자 이상 입력해 주세요."></textarea>
+        <div class="contact-heading">
+          <p class="contact-label">GET IN TOUCH</p>
+          <h2>문의하기</h2>
+          <p>
+            함께 일할 기회를 기다립니다.<br>
+            궁금한 점이 있다면 편하게 문의해 주세요.
+          </p>
+        </div>
 
-        <button type="submit">문의 보내기</button>
-        <!-- 입력 확인 결과 문구가 나타나는 곳 -->
-        <p id="form-msg" aria-live="polite"></p>
-      </form>
+        <!-- 기존 문의 전송 기능 유지 -->
+        <form id="contact-form" novalidate>
+
+          <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="홍길동" autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">문의 내용</label>
+            <textarea id="message" name="message" rows="5" placeholder="문의 내용을 10자 이상 입력해 주세요."></textarea>
+          </div>
+
+          <button type="submit">
+            문의 보내기 <span aria-hidden="true">↗</span>
+          </button>
+
+          <!-- 전송 결과 메시지 -->
+          <p id="form-msg" aria-live="polite"></p>
+
+        </form>
+
+      </div>
+
     </section>
+
   </main>
 
   <!-- 바닥 영역: 저작권 표시 -->
@@ -106,7 +306,8 @@
     <p>&copy; 2026 윤세희. All rights reserved. · <a href="admin.html">관리자</a> </p> <!--버전2-->
   </footer>
 
-    <!-- 맨 위로 가기 버튼 (3일차 추가) -->
+  <!-- 맨 위로 가기 버튼 (3일차 추가) -->
   <button type="button" id="top-btn" aria-label="맨 위로 가기">↑</button>
 </body>
+
 </html>
