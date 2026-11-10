@@ -1,198 +1,185 @@
-
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>AI 영상 제작 - 수상한 엘리베이터 | 다시, 나</title>
-
-  <!-- [공통] index.html과 동일한 본문 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Nanum+Myeongjo:wght@400;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- [공통] 기존 포트폴리오 스타일 -->
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- [추가] 엘리베이터 상세 페이지 전용 스타일 -->
   <link rel="stylesheet" href="css/ai-elevator.css">
 </head>
 
 <body class="ai-elevator-page">
- 
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="site-logo">
-      <span class="logo-title">다시, 나</span>
-      <span class="logo-subtitle">DEVELOPER PORTFOLIO</span>
-    </a>
+  <!-- 기존 헤더 유지 -->
+  <header class="site-header">
+    <div class="header-inner">
 
-    <a href="index.html#ai-content" class="detail-back">
-      ← MAIN
-    </a>
-  </div>
-</header>
-
-  <main class="elevator-main">
-
-    <!-- =========================================
-         [추가] 프로젝트 제목
-    ========================================= -->
-    <section class="elevator-intro">
-
-      <p class="elevator-eyebrow">
-        AI CONTENT / PROJECT 02
-      </p>
-
-      <h1>AI 영상 제작 - 수상한 엘리베이터</h1>
-
-      <p class="elevator-summary">
-        생성형 AI로 완성한 3D 애니메이션,
-        어린이를 위한 모험 이야기
-      </p>
-
-    </section>
-
-
-    <!-- =========================================
-         [추가] 제작 과정
-         PC: 3열 / 모바일: 1열
-    ========================================= -->
-    <section class="elevator-content"
-             aria-label="프로젝트 제작 과정">
-
-      <!-- 01 기획의도 -->
-      <article class="elevator-item">
-        <div class="elevator-item-heading">
-          <span class="elevator-number">01</span>
-          <h2>기획의도</h2>
-        </div>
-
-        <p>
-          생성형 AI를 활용해 상상력 넘치는
-          3D 애니메이션을 제작하고,
-          어린이들에게 모험과 용기의 메시지를
-          전달하고자 했습니다.
-        </p>
-      </article>
-
-      <!-- 02 문제점 -->
-      <article class="elevator-item">
-        <div class="elevator-item-heading">
-          <span class="elevator-number">02</span>
-          <h2>문제점</h2>
-        </div>
-
-        <p>
-          영상 제작 과정에서 캐릭터의 입 모양과
-          음성, 효과음이 일치하지 않고
-          배경과 의상이 달라지는 문제가
-          발생했습니다.
-        </p>
-      </article>
-
-      <!-- 03 해결내용 -->
-      <article class="elevator-item">
-        <div class="elevator-item-heading">
-          <span class="elevator-number">03</span>
-          <h2>해결내용</h2>
-        </div>
-
-        <p>
-          프롬프트에 대사와 동작의 시간을
-          명확히 지정하고, 캐릭터와 배경의
-          일관성을 유지하도록 반복 수정했습니다.
-        </p>
-      </article>
-
-    </section>
-
-
-    <!-- =========================================
-         [추가] 캐릭터 및 장면 이미지
-    ========================================= -->
-    <section class="elevator-gallery"
-             aria-label="캐릭터 및 장면 소개">
-
-      <!-- 대표 이미지 -->
-      <img
-        class="elevator-main-image"
-        src="img/elevator-main.png"
-        alt="민우와 몽이, 고래가 등장하는 수상한 엘리베이터 애니메이션"
-      >
-
-      <!-- 캐릭터 이미지 3개 -->
-      <div class="elevator-gallery-grid">
-
-        <img
-          src="img/elevator-boy.jpg"
-          alt="민우 캐릭터 설정"
-          loading="lazy"
-        >
-
-        <img
-          src="img/elevator-dog.jpg"
-          alt="몽이 캐릭터 설정"
-          loading="lazy"
-        >
-
-        <img
-          src="img/elevator-whale.jpg"
-          alt="고래 캐릭터 설정"
-          loading="lazy"
-        >
-
-      </div>
-
-      <p class="elevator-gallery-caption">
-        AI 영상 제작 · '수상한 엘리베이터'
-        주요 캐릭터 및 장면
-      </p>
-
-
-      <!-- =====================================
-           [추가] 유튜브 동영상 재생 영역
-           제공한 영상 URL을 embed 형식으로 변환
-      ===================================== -->
-      <div class="elevator-video">
-
-        <iframe
-          src="https://www.youtube.com/embed/CffNNadEzlg"
-          title="수상한 엘리베이터 - AI 3D 애니메이션"
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================================
-         [공통] AI CONTENT 목록으로 돌아가기
-    ========================================= -->
-    <div class="elevator-bottom-nav">
-      <a href="index.html#ai-content"
-         class="elevator-return-button">
-        ← AI CONTENT 목록으로
+      <a href="index.html" class="site-logo">
+        <span class="logo-title">다시, 나</span>
+        <span class="logo-subtitle2">
+          DEVELOPER PORTFOLIO
+        </span>
       </a>
+
+      <a href="index.html#ai-content" class="detail-back">
+        ← MAIN
+      </a>
+
     </div>
+  </header>
 
+  <!-- MAIN 영역만 변경 -->
+  <main class="elevator-main">
+    <section class="project-section" aria-labelledby="project-title">
+      <div class="section-heading">
+        <h2>1. PROJECT / MOTION</h2>
+        <span>AI CONTENT</span>
+      </div>
+      <div class="project-layout">
+        <div class="project-media">
+          <button class="video-poster" type="button" id="video-trigger" aria-label="수상한 엘리베이터 영상 재생">
+            <img src="img/elevator-cover.jpg" alt="태우, 몽이, 고래가 함께 등장하는 수상한 엘리베이터 대표 이미지">
+            <span class="play-circle" aria-hidden="true">▶</span>
+          </button>
+          <div class="video-player" id="video-player" hidden></div>
+        </div>
+
+        <div class="project-details">
+
+          <p class="project-category">MOTION</p>
+          <h1 id="project-title">수상한 엘리베이터</h1>
+
+          <!-- 기획의도 -->
+          <div class="project-info-item">
+            <div class="project-info-heading">
+              <strong>PLANNING</strong>
+              <span class="info-divider">|</span>
+            </div>
+            <p>
+              생성형 AI를 활용해 상상력 넘치는 3D 애니메이션을 제작하고,
+              어린이들에게 모험과 용기의 메시지를 전달하고자 했습니다.
+            </p>
+          </div>
+
+          <!-- 문제점 -->
+          <div class="project-info-item">
+            <div class="project-info-heading">
+              <strong>ISSUE</strong>
+              <span class="info-divider">|</span>
+            </div>
+            <p>
+              영상 제작 과정에서 캐릭터의 입 모양과 음성, 효과음이
+              일치하지 않고 배경과 의상이 달라지는 문제가 발생했습니다.
+            </p>
+          </div>
+
+          <!-- 해결내용 -->
+          <div class="project-info-item">
+            <div class="project-info-heading">
+              <strong>SOLUTION</strong>
+              <span class="info-divider">|</span>
+            </div>
+            <p>
+              프롬프트에 대사와 동작의 시간을 명확히 지정하고,
+              캐릭터와 배경의 일관성을 유지하도록 반복 수정했습니다.
+            </p>
+          </div>
+
+          <!-- 사용 도구 -->
+          <div class="project-info-item">
+            <div class="project-info-heading">
+              <strong>TOOL</strong>
+              <span class="info-divider">|</span>
+            </div>
+            <p>Google Flow, Gemini</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="character-section" id="character-design" aria-labelledby="character-title">
+      <div class="section-heading">
+        <h2 id="character-title">2. CHARACTER DESIGN</h2>
+        <span>수상한 엘리베이터</span>
+      </div>
+      <div class="character-board">
+        <aside class="taewoo-profile">
+          <h3>태우</h3>
+          <p class="character-role">수상한 엘리베이터의 주인공</p>
+          <div class="profile-preview">
+            <img src="img/taewoo-profile.jpg" alt="태우 캐릭터">
+          </div>
+          <div class="profile-card">
+            <h4>프로필</h4>
+            <p>풍성한 갈색 머리와 커다란 눈이 특징인 소년. 노란 후드티와 파란 반바지, 파란 배낭으로 밝고 활동적인 이미지를 표현했습니다.</p>
+          </div>
+          <h4 class="small-heading">캐릭터 소개</h4>
+          <p>모험 이야기의 중심이 되는 캐릭터로, 친근하고 생동감 있는 3D 애니메이션 스타일로 디자인했습니다.</p>
+        </aside>
+
+        <div class="character-main">
+          <div class="taewoo-grid">
+            <div class="character-panel">
+              <h3>턴어라운드</h3>
+              <img src="img/taewoo.jpg" alt="태우의 정면, 45도 측면, 후면 턴어라운드">
+              <p class="image-note">정면 · 45도 측면 · 후면</p>
+            </div>
+            <div class="character-panel">
+              <h3>표정</h3>
+              <img src="img/taewoo-expressions.jpg" alt="태우 표정 콘셉트 시안">
+              <p class="image-note">표정 콘셉트 시안</p>
+            </div>
+          </div>
+          <div class="friends-grid">
+            <article class="friend-panel">
+              <div class="friend-title">
+                <h3>몽이</h3><span>태우의 친구</span>
+              </div>
+              <img src="img/mongi.jpg" alt="몽이의 정면, 측면, 후면">
+              <h4>특징</h4>
+              <p>크림색의 복슬복슬한 털과 커다란 갈색 눈을 가진 강아지. 파란 목걸이와 금색 발바닥 메달이 포인트입니다.</p>
+            </article>
+            <article class="friend-panel">
+              <div class="friend-title">
+                <h3>고래</h3><span>태우의 친구</span>
+              </div>
+              <img src="img/whale.jpg" alt="고래의 정면, 45도 측면, 후면">
+              <h4>특징</h4>
+              <p>선명한 푸른 몸체와 하얀 배, 커다란 눈이 특징인 고래. 둥근 실루엣과 부드러운 표정으로 친근한 느낌을 강조했습니다.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="elevator-bottom-nav"><a href="index.html#ai-content" class="elevator-return-button">← AI CONTENT
+        목록으로</a></div>
   </main>
-
-
-  <!-- =========================================
-       [공통] 푸터
-  ========================================= -->
-  <footer class="elevator-footer">
-    <p>© 다시, 나 · DEVELOPER PORTFOLIO</p>
+  <!-- 기존 푸터 유지 -->
+  <footer>
+    <p>&copy; 2026 윤세희. All rights reserved.</p>
   </footer>
-
+  <script>
+    const trigger = document.getElementById('video-trigger');
+    const player = document.getElementById('video-player');
+    trigger.addEventListener('click', () => {
+      const frame = document.createElement('iframe');
+      frame.src = 'https://www.youtube.com/embed/CffNNadEzlg?autoplay=1&rel=0';
+      frame.title = '수상한 엘리베이터 - AI 3D 애니메이션';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      frame.allowFullscreen = true;
+      player.appendChild(frame);
+      trigger.hidden = true;
+      player.hidden = false;
+    });
+  </script>
 </body>
+
 </html>

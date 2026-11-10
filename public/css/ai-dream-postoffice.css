@@ -1,378 +1,265 @@
-/* PROJECT 03 전용: 기존 style.css 및 ai-detail.css는 변경하지 않습니다. */
-/* 페이지 공통 헤더, 푸터, 글꼴, 제목, 3열 설명은 공통 CSS를 그대로 사용합니다. */
 
-.ai-detail-page.dream-page .detail-main {
-  max-width: 1128px;
-  width: calc(100% - 40px);
-  padding-bottom: 0;
+/* =========================================
+   AI STORYBOOK
+   달빛 아래 꿈 우체국
+   기존 Header / Footer / Main Width 유지
+========================================= */
+
+/* PROJECT 표지 */
+.storybook-page .storybook-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
 }
 
-.ai-detail-page.dream-page .detail-intro {
+/* 프로젝트 설명 간격 */
+.storybook-page .project-info-item {
   margin-bottom: 14px;
 }
 
-.ai-detail-page.dream-page .detail-content {
+/* 섹션 간격 */
+.storybook-page .storybook-preview,
+.storybook-page .character-section {
+  margin-top: 95px;
+}
+
+/* =========================================
+   STORYBOOK PREVIEW
+========================================= */
+
+.storybook-page .storybook-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.storybook-page .storybook-item {
+  min-width: 0;
+  margin: 0;
+}
+
+.storybook-page .storybook-item img {
+  display: block;
+  width: 100%;
+  height: 335px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.storybook-page .storybook-item figcaption {
+  margin-top: 14px;
+  text-align: center;
+  color: #642b42;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.storybook-page .storybook-item-wide {
+  grid-column: 1 / -1;
+}
+
+.storybook-page .storybook-item-wide img {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   CHARACTER DESIGN
+========================================= */
+
+.storybook-page .storybook-character-board {
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #eee1e5;
+  border-radius: 34px;
+  box-shadow: 0 3px 18px #642b4208;
+}
+
+/* 대표 캐릭터 */
+.storybook-page .storybook-main-character {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 30px;
+  align-items: center;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #e8c9d1;
+}
+
+.storybook-page .storybook-character-image {
+  min-width: 0;
+}
+
+.storybook-page .storybook-character-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+.storybook-page .storybook-character-info {
+  min-width: 0;
+}
+
+.storybook-page .character-label {
+  color: #d4577c;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.storybook-page .storybook-character-info h3 {
+  margin: 8px 0;
+  color: #642b42;
+  font-size: 36px;
+}
+
+.storybook-page .character-subtitle {
+  color: #d4577c;
+  font-size: 14px;
   margin-bottom: 24px;
 }
 
-/* 원본 PNG의 모든 내용을 잘림 없이 표시 */
-.ai-detail-page.dream-page .dream-showcase {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  overflow: visible;
-}
-
-.ai-detail-page.dream-page .dream-showcase img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  object-fit: contain;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.ai-detail-page.dream-page .detail-bottom {
-   width: 100%;
-    margin: 35px auto 24px;
-    text-align: center;
-}
-
-@media (max-width: 600px) {
-  .ai-detail-page.dream-page .detail-main {
-    width: calc(100% - 32px);
-  }
-}
-
-/* detail-intro 아래쪽 선을 860px로 설정 */
-.ai-detail-page.dream-page .detail-intro {
-  position: relative;
-  border-bottom: none;
-}
-
-/* detail-intro 아래쪽 선을 860px로 변경 */
-.ai-detail-page.dream-page .detail-intro {
-  width: min(860px, 100%);
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 14px;
-  border-bottom: 1px solid #e8dede;
-}
-
-
-
-/* ==========================================
-   PROJECT 03 - 엘리베이터 페이지와 레이아웃 통일
-   HEADER 수정 없음
-========================================== */
-
-/* 01. 메인 영역 */
-.ai-detail-page.dream-page .detail-main {
-  width: calc(100% - 40px);
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 30px 0 70px;
-}
-
-/* 02. 프로젝트 제목 */
-.ai-detail-page.dream-page .detail-intro {
-  width: 100%;
-  margin: 0 0 30px;
-  padding: 0;
-  border: 0;
-  text-align: center;
-}
-
-.ai-detail-page.dream-page .detail-eyebrow {
-  margin: 0 0 10px;
-  color: #d4577c;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-.ai-detail-page.dream-page .detail-intro h2 {
-  margin: 0 0 10px;
-  color: #642b42;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  font-weight: 600;
-  line-height: 1.5;
-  border: 0;
-}
-
-.ai-detail-page.dream-page .detail-summary {
-  margin: 0;
-  color: #746b70;
-  font-size: 1.05rem;
-  line-height: 1.9;
-}
-
-/* 03. 기획의도 / 문제점 / 해결내용 */
-.ai-detail-page.dream-page .detail-content {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
-
-  width: 100%;
-  max-width: 860px;
-  margin: 0 0 28px;
-  padding: 28px 0;
-
-  position: static;
-  left: auto;
-  transform: none;
-
-  border-top: 1px solid #e8dede;
-  border-bottom: 1px solid #e8dede;
-}
-
-.ai-detail-page.dream-page .detail-item {
-  display: block;
-  min-width: 0;
-  margin: 0;
-  padding: 0 20px;
-  border: 0;
-  background: transparent;
-}
-
-.ai-detail-page.dream-page .detail-item:first-child {
-  padding-left: 0;
-}
-
-.ai-detail-page.dream-page .detail-item:last-child {
-  padding-right: 0;
-}
-
-.ai-detail-page.dream-page .detail-item + .detail-item {
-  border-left: 1px solid #e8a0b5;
-}
-
-/* 번호와 제목 */
-.ai-detail-page.dream-page .detail-item-heading {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0 0 14px;
-}
-
-.ai-detail-page.dream-page .detail-number {
-  color: #d4577c;
-  font-size: 28px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-.ai-detail-page.dream-page .detail-item h3 {
-  margin: 0;
-  padding: 0;
+.storybook-page .storybook-character-info h4 {
+  margin: 20px 0 8px;
   color: #642b42;
   font-size: 17px;
-  font-weight: 700;
-  line-height: 1.5;
-  border: 0;
 }
 
-/* 본문 설명 */
-.ai-detail-page.dream-page .detail-item p {
-  margin: 0;
-  padding: 0;
-  color: #383238;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.85;
-  border: 0;
+.storybook-page .storybook-character-info p {
+  line-height: 1.9;
   word-break: keep-all;
 }
 
-/* 04. 이미지 영역 */
-.ai-detail-page.dream-page .dream-showcase {
-  width: 100%;
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 14px;
-  background: #fff;
-  border: 1px solid #eee1e5;
-  border-radius: 15px;
-  overflow: hidden;
+/* FRIENDS 제목 */
+.storybook-page .friends-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin: 35px 0 24px;
 }
 
-.ai-detail-page.dream-page .dream-showcase img {
+.storybook-page .friends-heading h3 {
+  margin: 0;
+  color: #642b42;
+  font-size: 25px;
+}
+
+.storybook-page .friends-heading p {
+  margin: 0;
+  color: #d4577c;
+  font-size: 13px;
+}
+
+/* 친구 캐릭터 3열 */
+.storybook-page .storybook-friends-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.storybook-page .storybook-friend {
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid #eee1e5;
+  border-radius: 18px;
+  background: #fffaf9;
+  text-align: center;
+}
+
+.storybook-page .storybook-friend img {
   display: block;
   width: 100%;
-  max-width: 100%;
   height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: contain;
-  border: 0;
   border-radius: 10px;
-  box-shadow: none;
 }
 
-/* 05. 태블릿 */
-@media (max-width: 768px) {
-  .ai-detail-page.dream-page .detail-main {
-    max-width: 680px;
-  }
+.storybook-page .storybook-friend h4 {
+  margin: 15px 0 8px;
+  color: #642b42;
+  font-size: 20px;
 }
 
-/* 06. 모바일 */
-@media (max-width: 600px) {
-  .ai-detail-page.dream-page .detail-main {
-    width: calc(100% - 32px);
-    padding-top: 24px;
-  }
+.storybook-page .storybook-friend p {
+  margin: 0;
+  color: #383238;
+  font-size: 12px;
+  line-height: 1.8;
+  word-break: keep-all;
+}
 
-  .ai-detail-page.dream-page .detail-intro {
-    margin-bottom: 26px;
-  }
+/* =========================================
+   TABLET
+========================================= */
 
-  .ai-detail-page.dream-page .detail-content {
+@media (max-width: 1100px) {
+  .storybook-page .storybook-main-character {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 24px 0;
   }
 
-  .ai-detail-page.dream-page .detail-item,
-  .ai-detail-page.dream-page .detail-item:first-child,
-  .ai-detail-page.dream-page .detail-item:last-child {
-    padding: 0;
-  }
-
-  .ai-detail-page.dream-page .detail-item + .detail-item {
-    padding-top: 24px;
-    border-left: 0;
-    border-top: 1px solid #e8a0b5;
+  .storybook-page .storybook-character-image img {
+    max-width: 650px;
+    margin: 0 auto;
   }
 }
 
-/* ==========================================
-   PROJECT 03 - 엘리베이터 페이지 색상 통일
-   HEADER 수정 없음
-========================================== */
+/* =========================================
+   MOBILE
+========================================= */
 
-/* 01. 페이지 배경 및 기본 글자색 */
-.ai-detail-page.dream-page {
-  background: #fffaf9;
-  color: #383238;
-  font-family: "Noto Sans KR", sans-serif;
-}
+@media (max-width: 700px) {
+  .storybook-page .storybook-preview,
+  .storybook-page .character-section {
+    margin-top: 60px;
+  }
 
-/* 02. 프로젝트 소개 */
-.ai-detail-page.dream-page .detail-main {
-  background: #fffaf9;
-  color: #383238;
-}
+  .storybook-page .storybook-gallery {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 
-.ai-detail-page.dream-page .detail-eyebrow {
-  color: #d4577c;
-}
+  .storybook-page .storybook-item-wide {
+    grid-column: auto;
+  }
 
-.ai-detail-page.dream-page .detail-intro h2 {
-  color: #642b42;
-}
+  .storybook-page .storybook-character-board {
+    padding: 18px;
+    border-radius: 20px;
+  }
 
-/* 기존 제목 장식선 제거 */
-.ai-detail-page.dream-page .detail-intro::before,
-.ai-detail-page.dream-page .detail-intro::after,
-.ai-detail-page.dream-page .detail-intro h2::before,
-.ai-detail-page.dream-page .detail-intro h2::after {
-  content: none;
-  display: none;
-}
+  .storybook-page .storybook-main-character {
+    gap: 20px;
+    padding-bottom: 25px;
+  }
 
-.ai-detail-page.dream-page .detail-summary {
-  color: #746b70;
-}
+  .storybook-page .storybook-character-info h3 {
+    font-size: 30px;
+  }
 
-/* 03. 제작 과정 */
-.ai-detail-page.dream-page .detail-content {
-  background: transparent;
-  border-top: 1px solid #e8dede;
-  border-bottom: 1px solid #e8dede;
-}
+  .storybook-page .storybook-friends-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
 
-.ai-detail-page.dream-page .detail-item {
-  background: transparent;
-  box-shadow: none;
-}
+  .storybook-page .storybook-friend {
+    padding: 10px;
+  }
 
-.ai-detail-page.dream-page .detail-number {
-  color: #d4577c;
-}
+  .storybook-page .storybook-friend h4 {
+    font-size: 17px;
+  }
 
-.ai-detail-page.dream-page .detail-item h3 {
-  color: #642b42;
-}
-
-.ai-detail-page.dream-page .detail-item p {
-  color: #383238;
-}
-
-.ai-detail-page.dream-page .detail-item + .detail-item {
-  border-left-color: #e8a0b5;
-}
-
-/* 04. 이미지 영역 */
-.ai-detail-page.dream-page .dream-showcase {
-  background: #ffffff;
-  border-color: #eee1e5;
-}
-
-/* 05. 하단 돌아가기 버튼 */
-.ai-detail-page.dream-page .detail-list-btn {
-  display: inline-block;
-  padding: 13px 24px;
-  color: #642b42;
-  background: transparent;
-  border: 1px solid #b34c70;
-  border-radius: 30px;
-  font-size: 13px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-}
-
-.ai-detail-page.dream-page .detail-list-btn:hover {
-  background: #642b42;
-  color: #ffffff;
-}
-
-/* 06. 푸터 색상 */
-.ai-detail-page.dream-page .detail-footer {
-  background: #f5e8e6;
-}
-
-.ai-detail-page.dream-page .detail-footer p {
-  color: #642b42;
-}
-
-/* 07. 모바일 구분선 */
-@media (max-width: 600px) {
-  .ai-detail-page.dream-page .detail-item + .detail-item {
-    border-left: 0;
-    border-top: 1px solid #e8a0b5;
+  .storybook-page .storybook-friend p {
+    font-size: 11px;
   }
 }
 
-/* 삼국지 페이지와 MAIN 버튼 폰트 통일 */
-.ai-detail-page.dream-page .detail-back {
-  font-family: "Noto Sans KR", sans-serif;
-  color: #642b42;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.ai-detail-page.dream-page .detail-back:hover {
-  opacity: 0.7;
-}
-
-@media (max-width: 600px) {
-  .ai-detail-page.dream-page .detail-back {
-    font-size: 0.72rem;
+@media (max-width: 420px) {
+  .storybook-page .storybook-friends-grid {
+    grid-template-columns: 1fr;
   }
 }

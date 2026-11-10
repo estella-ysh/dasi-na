@@ -1,25 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>AI 학습 포스터 제작 - 삼국지 | 다시, 나</title>
-
+  <title>최소한의 삼국지 학습 세트 | 다시, 나</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Nanum+Myeongjo:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/ai-samgukji.css">
 </head>
 
-<body class="ai-detail-page samgukji-page">
-
-  <!-- 헤더 -->
- <header class="site-header">
+<body class="ai-elevator-page">
+  <!-- 기존 헤더 유지 -->
+  <header class="site-header">
     <div class="header-inner">
 
       <a href="index.html" class="site-logo">
         <span class="logo-title">다시, 나</span>
-        <span class="logo-subtitle2">DEVELOPER PORTFOLIO</span>
+        <span class="logo-subtitle2">
+          DEVELOPER PORTFOLIO
+        </span>
       </a>
 
       <a href="index.html#ai-content" class="detail-back">
@@ -27,98 +31,113 @@
       </a>
 
     </div>
-</header>
+  </header>
 
-  <main class="detail-main">
-
-    <!-- 프로젝트 제목 -->
-    <section class="detail-intro">
-      <p class="detail-eyebrow">
-        AI CONTENT / PROJECT 01
-      </p>
-
-      <h2>AI 학습 포스터 제작 - 삼국지</h2>
-
-      <p class="detail-summary">
-        복잡한 삼국지 이야기를 쉽고 재미있게 배우는
-        시각 학습 콘텐츠
-      </p>
+  <!-- MAIN 영역만 변경 -->
+  <main class="elevator-main samgukji-main">
+    <section class="project-section" aria-labelledby="project-title">
+      <div class="section-heading">
+        <h2>1. PROJECT / EDUCATIONAL CONTENTS</h2><span>EDUCATIONAL CONTENTS</span>
+      </div>
+      <div class="project-layout">
+        <div class="project-media">
+          <figure class="samgukji-poster">
+            <img src="img/samgukji-poster.png" alt="최소한의 삼국지 학습 세트 디자인 참고 이미지. 학습 포스터를 포함한 전체 제품 구성" />
+            <figcaption>벽면 학습 포스터</figcaption>
+          </figure>
+        </div>
+        <div class="project-details">
+          <p class="project-category">EDUCATIONAL CONTENTS</p>
+          <h1 id="project-title">최소한의 삼국지 학습 세트</h1>
+          <div class="project-info-item">
+            <div class="project-info-heading"><strong>PLANNING</strong><span class="info-divider">|</span></div>
+            <p>중학교 2학년 학생이 어려운 삼국지의 인물과 사건을 쉽고 재미있게 이해하도록 시각적인 학습 자료를 제작했습니다.</p>
+          </div>
+          <div class="project-info-item">
+            <div class="project-info-heading"><strong>ISSUE</strong><span class="info-divider">|</span></div>
+            <p>등장인물과 사건이 많아 핵심 내용을 기억하기 어렵고, 한 장의 이미지에 많은 정보를 담으면 가독성이 떨어질 수 있었습니다.</p>
+          </div>
+          <div class="project-info-item">
+            <div class="project-info-heading"><strong>SOLUTION</strong><span class="info-divider">|</span></div>
+            <p>핵심 사건 8개와 주요 단어 20개를 선정하고, 벽면 포스터와 개별 학습카드로 나누어 학습 목적에 맞게 디자인했습니다.</p>
+          </div>
+          <div class="project-info-item">
+            <div class="project-info-heading"><strong>TOOL</strong><span class="info-divider">|</span></div>
+            <p>ChatGPT</p>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <!-- =========================================
-     [수정] 제작 과정
-     PC: 가로 3열 / 모바일: 세로 1열
-     박스 없이 텍스트 중심으로 구성
-========================================= -->
-<section class="detail-content"
-         aria-label="프로젝트 제작 과정">
-
-  <!-- [수정] 01 기획의도 -->
-  <article class="detail-item">
-    <div class="detail-item-heading">
-      <span class="detail-number">01</span>
-      <h3>기획의도</h3>
-    </div>
-
-    <p>
-      중학교 2학년 학생이 어려운 삼국지의
-      인물과 사건을 쉽고 재미있게 이해하도록
-      시각적인 학습 자료를 제작했습니다.
-    </p>
-  </article>
-
-  <!-- [수정] 02 문제점 -->
-  <article class="detail-item">
-    <div class="detail-item-heading">
-      <span class="detail-number">02</span>
-      <h3>문제점</h3>
-    </div>
-
-    <p>
-      등장인물과 사건이 많아 핵심 내용을
-      기억하기 어렵고, 한 장의 이미지에 많은
-      정보를 담으면 가독성이 떨어질 수 있었습니다.
-    </p>
-  </article>
-
-  <!-- [수정] 03 해결내용 -->
-  <article class="detail-item">
-    <div class="detail-item-heading">
-      <span class="detail-number">03</span>
-      <h3>해결내용</h3>
-    </div>
-
-    <p>
-      핵심 사건 8개와 주요 단어 20개를 선정하고,
-      벽면 포스터와 개별 학습카드로 나누어
-      학습 목적에 맞게 디자인했습니다.
-    </p>
-  </article>
-
-</section>
-    <!-- 제품 구성 이미지: 원본 전체 표시, 이미지 자체 변경 없음 -->
-    <figure class="detail-image-section">
-      <img
-        src="img/samgukji-product.png"
-        alt="최소한의 삼국지 학습 세트 제품 구성 및 디자인 소개"
-      >
-    <figcaption>
-      최소한의 삼국지 · 학습 콘텐츠 제품 구성
-    </figcaption>
-  </figure>
-    <!-- 돌아가기 -->
-    <div class="detail-bottom">
-      <a href="index.html#ai-content"
-         class="detail-list-btn">
-        ← AI CONTENT 목록으로
-      </a>
-    </div>
-
+    <section class="samgukji-section" aria-labelledby="product-title">
+      <div class="section-heading">
+        <h2 id="product-title">2. PRODUCT COMPOSITION</h2><span>제품 구성</span>
+      </div>
+      <div class="samgukji-card-grid">
+        <article class="samgukji-card">
+          <div class="samgukji-image-slot"><img src="img/samgukji-cards.png" alt="삼국지 학습 카드 참고 이미지" /></div>
+          <h3>학습 카드</h3>
+          <p>인물 · 사건 등 주요 내용을 카드로 학습</p>
+        </article>
+        <article class="samgukji-card">
+          <div class="samgukji-image-slot"><img src="img/samgukji-cards_issue.png" alt="사건 카드 참고 이미지" /></div>
+          <h3>사건 카드</h3>
+          <p>삼국지의 주요 사건 8개를 그림과 이야기로 학습</p>
+        </article>
+        <article class="samgukji-card">
+          <div class="samgukji-image-slot"><img src="img/samgukji-cards_human.png" alt="인물,용어 카드 참고 이미지" /></div>
+          <h3>인물,용어 카드</h3>
+          <p>주요 인물의 특징과 핵심 용어를 쉽게 이해하는 학습</p>
+        </article>
+        <!-- 두 번째 줄: 실제 이미지와 설명이 준비되면 교체하세요 -->
+        <article class="samgukji-card samgukji-card--placeholder">
+          <div class="samgukji-image-slot"><img src="img/samgukji-board.png" alt="인칭찬 스티커판 참고 이미지" /></div>
+          <h3>칭찬 스티커판</h3>
+          <p>학습 성취를 기록하고 보상을 모으는 활동</p>
+        </article>
+        <article class="samgukji-card samgukji-card--placeholder">
+          <div class="samgukji-image-slot"><img src="img/samgukji-sticker.png" alt="칭찬 스티커 참고 이미지" /></div>
+          <h3>칭찬 스티커</h3>
+          <p>학습 목표 달성에 따라 붙이는 보상 스티커</p>
+        </article>
+        <article class="samgukji-card samgukji-card--placeholder">
+          <div class="samgukji-image-slot"><img src="img/samgukji-stamp.png" alt="우드 스탬프 3종 참고 이미지" /></div>
+          <h3>우드 스탬프 3종</h3>
+          <p>학습 완료·정답·칭찬을 표시하는 참여형 도구</p>
+        </article>
+      </div>
+    </section>
+    <section class="samgukji-section" aria-labelledby="design-title">
+      <div class="section-heading">
+        <h2 id="design-title">3. DESIGN POINT</h2><span>디자인 포인트</span>
+      </div>
+      <div class="samgukji-card-grid">
+        <article class="samgukji-card">
+          <div class="samgukji-design-preview samgukji-characters" aria-hidden="true"><span>CHARACTER</span></div>
+          <h3>캐릭터 중심 일러스트</h3>
+          <p>주요 인물을 친근하고 역동적으로 표현</p>
+        </article>
+        <article class="samgukji-card">
+          <div class="samgukji-design-preview samgukji-colors" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <h3>컬러 &amp; 그래픽</h3>
+          <p>역사적 분위기를 살린 활기 있는 컬러와 아이콘</p>
+        </article>
+        <article class="samgukji-card">
+          <div class="samgukji-design-preview samgukji-type" aria-hidden="true">가나다라마바사</div>
+          <h3>타이포그래피</h3>
+          <p>가독성과 몰입감을 높이는 제목 본문 서체 구성</p>
+        </article>
+      </div>
+    </section>
+    <div class="elevator-bottom-nav"><a href="index.html#ai-content" class="elevator-return-button">← AI CONTENT
+        목록으로</a></div>
   </main>
 
-  <footer class="detail-footer">
-    <p>© 다시, 나 · DEVELOPER PORTFOLIO</p>
+  <!-- 기존 푸터 유지 -->
+  <footer>
+    <p>&copy; 2026 윤세희. All rights reserved.</p>
   </footer>
-
 </body>
+
 </html>
